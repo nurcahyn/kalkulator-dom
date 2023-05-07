@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator DOM</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h2>KALKULATOR DOM</h2>
+		<form>
+			<div class="form-group">
+				<label for="angka1">ANGKA PERTAMA</label><br>
+				<input type="number" class="form-control" id="angka1" placeholder="Masukkan angka">
+			</div>
+			<div class="form-group">
+				<label for="angka2">ANGKA KEDUA</label><br>
+				<input type="number" class="form-control" id="angka2" placeholder="Masukkan angka">
+			</div>
+			<div class="form-group">
+				<label for="operator">OPERATOR</label><br>
+				<select class="form-control" id="operator">
+					<option value="tambah"> + </option>
+					<option value="kurang"> - </option>
+					<option value="kali"> * </option>
+					<option value="bagi"> / </option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="hasil">HASIL</label><br>
+				<input type="text" class="form-control" id="hasil" disabled>
+			</div>
+			<button type="button" class="btn btn-primary" onclick="hitung()">Hitung</button>
+			<button type="button" class="btn btn-secondary" onclick="reset()">Reset</button>
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
